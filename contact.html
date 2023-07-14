@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Anna Kalis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact information and contact form for Community Science Museum. CSM creates a space where everyone can experience the wonders of science discoveries."
+    />
+    <title>Contact | CSM-Community Science Museum</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger-icon"><i> </i></label>
+      <a class="logo" href="index.html"
+        ><img src="images/logo-hamburger-menu.svg" alt="Community Science Museum logo"
+      /></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="visit.html">Visit</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="get-involved.html">Get involved</a>
+        <a href="contact.html" class="current">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact us</h1>
+      <ul>
+        <li>+47 123 45 678</li>
+        <li>contact@csm.no</li>
+        <li>Solemskogveien 33 <br> 1000 Oslo</li>
+      </ul>
+      <Section><h2>Sendus a message</h2>
+        <form method="post" class="contact-form">
+            <div>
+              <label for="name">Your name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="email">Your email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" class="message"></textarea>
+            </div>
+            <div>
+              <a href="contact-confirmation.html">Send</a>
+            </div>
+          </form></Section>
+    </main>
+    <footer>
+      <p class="copyright">&copy; 2023 Anna Kalis SP1</p>
+    </footer>
+  </body>
+</html>
