@@ -1,9 +1,56 @@
 /* General styling - apply all pages
 -------------------------------------------------------------------*/
 :root {
-    --black-blue: ;
-    --blue-green: ;
-    --white-gray: ;
-    --white: #fff;
+  --white: #fff;
+  --black: #000000;
+  --blue-black: #161c1f;
+  --blue: #0d3e5b;
+  --light-blue: #e3f2fb;
+  --blue-green: #7ea5bf;
+  --yellow: #f5cf73;
+  --orange: #e9a125;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: Trirong;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+}
+
+
+
+/* Header
+-------------------------------------------------------------------*/
+
+/* Footer
+-------------------------------------------------------------------*/
+
+
+
+
+/* Media Queries
+-------------------------------------------------------------------*/
+
+@media (min-width: 600px) {
+
+}
