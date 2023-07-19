@@ -15,20 +15,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 main {
   flex: 1;
-  width: 95%;
-  margin: 0 auto;
+  width: 90%;
 }
 
 a {
   text-decoration: none;
   color: var(--blue-black);
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
 
 h1,
 h2 {
-  font-family: 'Trirong', serif;
+  font-family: "Trirong", serif;
   font-weight: 700;
 }
 
@@ -54,19 +54,23 @@ h2 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
 }
 
-.cta-yellow,
-.cta-orange {
-  display: inline-block;
-  padding: 5px 50px;
-  color: var(--black);
-  font-family: 'Work Sans', sans-serif;
+h3,
+.cta,
+.contact ul {
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  color: var(--black);
+}
+
+.cta {
+  display: inline-block;
+  padding: 5px 50px;
   border-radius: 0.0625rem;
   border: 1px solid var(--blue-black);
 }
@@ -76,6 +80,10 @@ p {
 
 .cta-yellow {
   background: var(--yellow);
+}
+
+.cta-blue {
+  background: var(--blue-green);
 }
 
 .back-to-top {
@@ -93,11 +101,51 @@ header {
   background-color: var(--blue);
   width: 100%;
   position: fixed;
+  position: relative;
   z-index: 100;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .current {
-    font-weight: 700;
-    text-decoration: underline;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#menu-checkbox,
+nav {
+  display: none;
+  padding: 20px;
+}
+
+nav {
+  position: absolute;
+  background-color: var(--light-blue);
+  left: 0px;
+  top: 65px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+}
+nav a:hover {
+  font-weight: 700;
+}
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+.fa-bars {
+  display: inline-block;
+  padding: 20px;
+  color: var(--light-blue);
+}
+.logo {
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 /* Footer
@@ -105,6 +153,54 @@ header {
 footer {
   background-color: var(--blue);
   width: 100%;
+}
+
+/* index.html
+-------------------------------------------------------------------*/
+.welcome h1 {
+  color: var(--blue-black);
+  font-family: Trirong;
+  font-size: 2rem;
+}
+
+.welcome p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* visit.html
+-------------------------------------------------------------------*/
+
+.visit h3 {
+  color: var(--blue-black);
+  font-family: "Trirong", serif;
+  font-size: 1.25rem;
+}
+
+/* contact.html
+-------------------------------------------------------------------*/
+.contact ul {
+  color: var(--blue-black);
+}
+
+.contact label {
+  display: block;
+  font-family: Work Sans;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+/* contact-confimration.html
+-------------------------------------------------------------------*/
+.contact-confirmation h1 {
+  color: var(--blue-black);
+}
+
+.contact-confirmation p {
+  color: var(--blue-black);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Media Queries
@@ -117,5 +213,20 @@ footer {
 
   .back-to-top {
     display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+    background-color: var(--blue);
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+    color: var(--light-blue);
   }
 }
