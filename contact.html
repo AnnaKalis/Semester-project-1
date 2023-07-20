@@ -34,34 +34,39 @@
     </header>
     <main class="contact">
       <h1>Contact us</h1>
-      <ul>
-        <li><i class="fa-solid fa-phone"></i> +47 123 45 678</li>
-        <li><i class="fa-solid fa-at"></i> contact@csm.no</li>
-        <li>
-          <i class="fa-solid fa-location-dot"></i> Solemskogveien 33 <br />
-          1000 Oslo
-        </li>
-      </ul>
-      <section>
-        <h2>Send us a message</h2>
-        <form method="post" class="contact-form">
-          <div>
-            <label for="name">Your name</label>
-            <input type="text" name="name" id="name" required />
-          </div>
-          <div>
-            <label for="email">Your email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" class="message"></textarea>
-          </div>
-          <div>
-            <a href="contact-confirmation.html" class="cta cta-orange">Send</a>
-          </div>
-        </form>
-      </section>
+      <div class="contact-info-form">
+        <div class="contact-information">
+            <i class="fa-solid fa-phone"></i>
+            <p>+47 123 45 678</p>
+          <i class="fa-solid fa-at"></i>
+          <p>contact@csm.no</p>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>
+            Solemskogveien 33<br />
+            1000 Oslo
+          </p>
+        </div>
+        <section class="contact-form-section">
+          <h2>Send us a message</h2>
+          <form method="post" class="contact-form">
+            <div>
+              <label for="name">Your name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="email">Your email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" class="message"></textarea>
+            </div>
+            <div>
+              <a href="contact-confirmation.html" class="cta cta-orange">Send</a>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="contact-social-media">
