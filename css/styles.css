@@ -276,7 +276,7 @@ footer h3 {
 .exhibition-tile h3,
 .exhibition-tile h2,
 .exhibition-tile-pcta {
-    margin: 0;
+  margin: 0;
   display: inline-block;
   background-color: var(--light-blue);
 }
@@ -317,16 +317,15 @@ footer h3 {
   object-position: center;
   margin: 10px 0;
 }
-.visit div{
-    padding: 0 20px;
+.visit div {
+  padding: 0 20px;
 }
 .visit-food-shop,
 .visit-hours-accessibility,
 .visit-location-admission {
-    margin: 0 auto;
-    width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
-
 
 /* exhibitions.html
 -------------------------------------------------------------------*/
@@ -339,37 +338,35 @@ footer h3 {
 }
 
 .exhibition-tiles {
-    width: 80%; 
-    margin: 0 auto 20px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+  width: 80%;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
 }
 
 .exhibition-tiles h2 {
-    border-radius:0.3125rem 0.3125rem 0 0;
-    padding: 5px;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  padding: 5px;
 }
 
-
 .exhibition-tile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .exhibition-tile-pcta {
-    border-radius: 0 0 0.3125rem 0.3125rem;
-    padding: 5px;
-    position: relative;
-    min-height: 120px;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+  padding: 5px;
+  position: relative;
+  min-height: 120px;
 }
 
 .exhibition-tile-pcta a {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 /* get-involved.html
 -------------------------------------------------------------------*/
@@ -414,34 +411,42 @@ footer h3 {
 .contact-info-form {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
   width: 80%;
   margin: 0 auto 20px;
-  gap: 30px;
+  gap: 20px;
 }
 
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  
+}
 .contact-form-section h2 {
-  text-align: center;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .contact-form input {
-  width: 98%;
+    width: 60vw;
+    margin-bottom: 15px;
+}
+.contact-form textarea {
+  min-height: 200px;
+  width: 60vw;
   margin-bottom: 20px;
 }
 
-.contact-form textarea {
-  width: 98%;
-  min-height: 200px;
-  margin-bottom: 10px;
-}
-
 .contact-information {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   color: var(--blue-black);
   font-size: 1.325rem;
+  align-items: center;
+  padding: 30px 0;
 }
+
+
 
 /* contact-confimration.html
 -------------------------------------------------------------------*/
@@ -477,6 +482,7 @@ footer h3 {
 
 .contact-confirmation-section a {
   margin-top: 50px;
+  
 }
 /* Media Queries 
 -------------------------------------------------------------------*/
@@ -527,22 +533,17 @@ footer h3 {
   .exhibition-tiles {
     width: 70%;
   }
-
-
 }
 
 @media (min-width: 700px) {
+  .exhibition-tiles {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
 
-    .exhibition-tiles {
-        grid-template-columns: repeat(2, 1fr);
-        width: 80%;
-    
-      }
-
-    .exhibition-tile-pcta {
-        min-height: 130px;
-    }
-   
+  .exhibition-tile-pcta {
+    min-height: 130px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -572,35 +573,32 @@ footer h3 {
   .visit-location-admission {
     display: flex;
     flex-direction: row;
-    
   }
 
   .exhibition-tile-pcta {
     min-height: 120px;
-}
-  
-
+  }
 }
 
-@media (min-width:1100px) {
-    .exhibition-tiles {
-        grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-      }
+@media (min-width: 1100px) {
+  .exhibition-tiles {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+  }
 
-      .exhibition-tile-pcta {
-        min-height: 130px;
-    }
+  .exhibition-tile-pcta {
+    min-height: 130px;
+  }
 }
 
-@media (min-width:1300px){
-    .exhibition-tiles {
-        width: 70%;
-      }
+@media (min-width: 1300px) {
+  .exhibition-tiles {
+    width: 70%;
+  }
 }
 
-@media (min-width:1500px){
-    .exhibition-tiles {
-        width: 60%;
-      }
+@media (min-width: 1500px) {
+  .exhibition-tiles {
+    width: 60%;
+  }
 }
