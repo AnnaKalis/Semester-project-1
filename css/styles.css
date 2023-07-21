@@ -277,6 +277,7 @@ footer h3 {
 .exhibition-tile h3,
 .exhibition-tile h2,
 .exhibition-tile-pcta {
+    margin: 0;
   display: inline-block;
   background-color: var(--light-blue);
 }
@@ -317,6 +318,16 @@ footer h3 {
   object-position: center;
   margin: 10px 0;
 }
+.visit div{
+    padding: 0 20px;
+}
+.visit-food-shop,
+.visit-hours-accessibility,
+.visit-location-admission {
+    margin: 0 auto;
+    width: 80%;
+}
+
 
 /* exhibitions.html
 -------------------------------------------------------------------*/
@@ -328,6 +339,39 @@ footer h3 {
   background-image: url(../images/exhibitions-evolution.jpg);
 }
 
+.exhibition-tiles {
+    width: 80%; 
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.exhibition-tiles h2 {
+    border-radius:0.3125rem 0.3125rem 0 0;
+    padding: 5px;
+}
+
+
+.exhibition-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.exhibition-tile-pcta {
+    border-radius: 0 0 0.3125rem 0.3125rem;
+    padding: 5px;
+    position: relative;
+    min-height: 120px;
+}
+
+.exhibition-tile-pcta a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
 /* get-involved.html
 -------------------------------------------------------------------*/
 
@@ -366,7 +410,6 @@ footer h3 {
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 100%;
-  padding:20px;
 }
 
 .contact-info-form {
@@ -380,19 +423,19 @@ footer h3 {
 
 .contact-form-section h2 {
   text-align: center;
-  margin:0;
+  margin: 0;
   margin-bottom: 20px;
 }
 
 .contact-form input {
-  width: 100%;
+  width: 98%;
   margin-bottom: 20px;
 }
 
 .contact-form textarea {
-  width: 100%;
+  width: 98%;
   min-height: 200px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .contact-information {
@@ -451,6 +494,9 @@ footer h3 {
   .hamburger-icon {
     display: none;
   }
+  header {
+    flex-direction: column;
+  }
 
   nav {
     display: block;
@@ -482,6 +528,16 @@ footer h3 {
   .cta {
     width: 200px;
   }
+  .exhibition-tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xhibition-tile-pcta.cta {
+    padding: 5px 10px;
+    width:70px;
+  }
+
+
 }
 
 @media (min-width: 900px) {
@@ -499,7 +555,21 @@ footer h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-information{
+  .contact-information {
     padding: 50px 0;
   }
+
+  header {
+    flex-direction: row;
+  }
+  .visit-food-shop,
+  .visit-hours-accessibility,
+  .visit-location-admission {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+
+
 }
