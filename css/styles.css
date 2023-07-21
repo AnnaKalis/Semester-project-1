@@ -421,15 +421,14 @@ footer h3 {
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  
 }
 .contact-form-section h2 {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .contact-form input {
-    width: 60vw;
-    margin-bottom: 15px;
+  width: 60vw;
+  margin-bottom: 15px;
 }
 .contact-form textarea {
   min-height: 200px;
@@ -445,8 +444,6 @@ footer h3 {
   align-items: center;
   padding: 30px 0;
 }
-
-
 
 /* contact-confimration.html
 -------------------------------------------------------------------*/
@@ -482,7 +479,6 @@ footer h3 {
 
 .contact-confirmation-section a {
   margin-top: 50px;
-  
 }
 /* Media Queries 
 -------------------------------------------------------------------*/
@@ -544,6 +540,10 @@ footer h3 {
   .exhibition-tile-pcta {
     min-height: 130px;
   }
+
+  .contact-info-form {
+    width: 70%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -559,6 +559,10 @@ footer h3 {
 
   .contact-info-form {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 30vh;
   }
 
   .contact-information {
@@ -591,6 +595,12 @@ footer h3 {
   }
 }
 
+@media (min-width: 1200px) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 40vh;
+  }
+}
 @media (min-width: 1300px) {
   .exhibition-tiles {
     width: 70%;
@@ -598,7 +608,10 @@ footer h3 {
 }
 
 @media (min-width: 1500px) {
-  .exhibition-tiles {
+  .exhibition-tiles,
+  .contact-info-form {
     width: 60%;
   }
+
+  .contact-info-form
 }
