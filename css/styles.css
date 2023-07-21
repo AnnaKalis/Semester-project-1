@@ -315,17 +315,24 @@ footer h3 {
   max-height: 15vw;
   object-fit: cover;
   object-position: center;
-  margin: 10px 0;
+  margin: 0;
 }
+
 .visit div {
   padding: 0 20px;
+  width:90%;
 }
+
 .visit-food-shop,
 .visit-hours-accessibility,
 .visit-location-admission {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 80%;
+  margin-bottom: 20px;
 }
+
 
 /* exhibitions.html
 -------------------------------------------------------------------*/
@@ -488,8 +495,7 @@ footer h3 {
 /* Media Queries 
 -------------------------------------------------------------------*/
 @media (min-width: 400px) {
-  
-    .contact-confirmation-section {
+  .contact-confirmation-section {
     width: 70%;
   }
 }
@@ -540,6 +546,14 @@ footer h3 {
   .exhibition-tiles {
     width: 70%;
   }
+
+  .visit-food-shop,
+  .visit-hours-accessibility,
+  .visit-location-admission {
+    width: 70%;
+  }
+
+
 }
 
 @media (min-width: 700px) {
@@ -555,6 +569,19 @@ footer h3 {
   .contact-info-form {
     width: 70%;
   }
+
+  .visit-food-shop,
+  .visit-hours-accessibility,
+  .visit-location-admission {
+    flex-direction: row;
+    width: 80%;
+  }
+  .visit div {
+    padding: 0 20px;
+    width:70%;
+  }
+
+
 }
 
 @media (min-width: 900px) {
@@ -583,15 +610,25 @@ footer h3 {
   header {
     flex-direction: row;
   }
-  .visit-food-shop,
-  .visit-hours-accessibility,
-  .visit-location-admission {
-    display: flex;
-    flex-direction: row;
-  }
 
   .exhibition-tile-pcta {
     min-height: 120px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .visit-food-shop,
+  .visit-hours-accessibility,
+  .visit-location-admission {
+    width: 70%;
+  }
+
+  .visit div {
+    width:60%;
+  }
+
+  .visit img {
+    max-height: 10vw;
   }
 }
 
@@ -616,6 +653,18 @@ footer h3 {
   .exhibition-tiles {
     width: 70%;
   }
+
+  .visit-food-shop,
+  .visit-hours-accessibility,
+  .visit-location-admission {
+    width: 60%;
+  }
+
+  .visit div {
+    padding: 0 20px;
+    width:50%;
+  }
+
 }
 
 @media (min-width: 1500px) {
@@ -624,5 +673,8 @@ footer h3 {
     width: 60%;
   }
 
-  .contact-info-form;
+  .visit img {
+    max-height: 7vw;
+  }
+
 }
