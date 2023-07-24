@@ -284,7 +284,6 @@ footer h3 {
   overflow: hidden;
 }
 
-
 .intro-teachers img {
   left: -80px;
 }
@@ -594,21 +593,24 @@ footer h3 {
 }
 
 @media (min-width: 500px) {
-    .intro img {
-        position: static;
-        justify-self: end;
-      }
-      
-      .intro-teachers img {
-        position: static;
-        justify-self: start;
-      }
-
-      .intro div {
-        gap: 10px;px;
-      }
-
+  .intro img {
+    position: static;
+    justify-self: end;
   }
+
+  .intro-teachers img {
+    position: static;
+    justify-self: start;
+  }
+
+  .intro div {
+    gap: 10px;
+  }
+
+  .most-popular {
+    width: 60%;
+  }
+}
 
 @media (min-width: 600px) {
   .copyright {
@@ -658,8 +660,7 @@ footer h3 {
   }
 
   .exhibition-tiles,
-  .events-single,
-.most-popular  {
+  .events-single {
     width: 60%;
   }
 
@@ -706,16 +707,22 @@ footer h3 {
     width: 70%;
   }
 
-  .events-all,
-.most-popular-exhibitions {
+  .events-all {
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0;
-    width: 80%;
-}
+  }
 
-}
+  .events-single {
+    margin: 20px;
+  }
 
+  .most-popular .exhibition-tile {
+    margin: 20px;
+  }
+
+  .most-popular {
+    width: 50%;
+  }
+}
 @media (min-width: 900px) {
   footer {
     grid-template-columns: repeat(3, 1fr);
@@ -754,7 +761,11 @@ footer h3 {
     width: 60%;
   }
 
+  .events-all {
+    width: 70%;
+  }
 
+ 
 }
 
 @media (min-width: 1000px) {
@@ -785,22 +796,28 @@ footer h3 {
     padding: 20px;
     margin: 0;
   }
-  
-.intro img {
+
+  .intro img {
     grid-row: 2/3;
-}
+  }
   .intro h2 {
     grid-column: 1/2;
-justify-self: center;
+    justify-self: center;
   }
-  
+
   .intro a {
     grid-column: 1/2;
   }
-  
+
   .intro-teachers p {
     grid-column: 1/2;
-   
+  }
+  .most-popular-exhibitions {
+    flex-direction: row;
+  }
+
+  .most-popular {
+    width: 100%;
   }
 
 }
@@ -815,12 +832,16 @@ justify-self: center;
     min-height: 130px;
   }
 
-  .welcome{
+  .welcome {
     min-height: 55vh;
   }
 
   .welcome p {
     width: 50%;
+  }
+
+  .most-popular {
+    width: 90%;
   }
 }
 
@@ -832,6 +853,14 @@ justify-self: center;
 
   .welcome a {
     right: 400px;
+  }
+
+  .events-all {
+    width: 60%;
+  }
+
+  .most-popular {
+    width: 80%;
   }
 }
 @media (min-width: 1300px) {
@@ -861,7 +890,6 @@ justify-self: center;
     max-height: 7vw;
   }
 
-
   .welcome a {
     right: 700px;
   }
@@ -871,7 +899,13 @@ justify-self: center;
   }
 
   .intro {
-    width:70%
+    width: 70%;
   }
 
+  .events-all {
+    width: 45%;
+  }
+  .most-popular {
+    width: 60%;
+  }
 }
