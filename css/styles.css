@@ -130,7 +130,7 @@ nav a:hover {
   display: block;
 }
 
-.fa-bars {
+.hamburger-icon {
   display: inline-block;
   padding: 20px;
   color: var(--light-blue);
