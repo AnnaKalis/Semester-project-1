@@ -264,7 +264,7 @@ footer h3 {
   margin: 20px auto;
   position: relative;
   padding: 10px 0;
-  gap:10px;
+  gap: 10px;
 }
 
 .intro h2,
@@ -288,12 +288,12 @@ footer h3 {
   position: absolute;
   right: -80px;
   overflow: hidden;
-  opacity:calc(0.8)
+  opacity: calc(0.8);
 }
 
 .get-involved img {
-    height: 400px;
-    right: -280px;
+  height: 400px;
+  right: -280px;
 }
 
 .intro-teachers img {
@@ -484,38 +484,35 @@ footer h3 {
 -------------------------------------------------------------------*/
 
 .exhibition-info {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    width:90%;
-    margin:0 auto 20px;
-    gap:20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto 20px;
+  gap: 20px;
 }
 
-
 .exhibition-image-1 {
-    height: 200px;
+  height: 200px;
 }
 
 .exhibition-image-2 {
-    height: 100px;
-    
+  height: 100px;
 }
 
 .exhibition-image-3 {
-    height: 200px;
+  height: 200px;
 }
 
-
 .exhibition img {
-    border-radius: 50%;
-    display:inline-block;
-    justify-self: center;
-  }
+  border-radius: 50%;
+  display: inline-block;
+  justify-self: center;
+}
 
-  .exhibition-images {
-    justify-self: center;
-  }
+.exhibition-images {
+  justify-self: center;
+}
 
 /* get-involved.html
 -------------------------------------------------------------------*/
@@ -523,7 +520,6 @@ footer h3 {
 .get-involved img {
   border-radius: 50%;
 }
-
 
 /* contact.html
 -------------------------------------------------------------------*/
@@ -639,7 +635,7 @@ footer h3 {
     width: 70%;
   }
 
-  .get-involved img{
+  .get-involved img {
     height: 250px;
     right: -80px;
   }
@@ -656,13 +652,12 @@ footer h3 {
     justify-self: start;
   }
 
-
   .most-popular {
     width: 60%;
   }
 
   .exhibition-info {
-    width:80%;
+    width: 80%;
   }
 }
 
@@ -726,20 +721,19 @@ footer h3 {
   .intro img {
     justify-self: center;
   }
- .get-involved img {
+  .get-involved img {
     position: static;
     justify-self: end;
-}
+  }
 
-.exhibition-image-1 {
+  .exhibition-image-1 {
     height: 250px;
-}
+  }
 
-.exhibition-image-2 {
+  .exhibition-image-2 {
     height: 130px;
     align-self: flex-end;
-}
-
+  }
 }
 
 @media (min-width: 700px) {
@@ -794,8 +788,6 @@ footer h3 {
   .exhibition-info {
     width: 70%;
   }
-
- 
 }
 @media (min-width: 900px) {
   footer {
@@ -839,13 +831,13 @@ footer h3 {
     width: 70%;
   }
 
-  .get-involved{
-    width: 80%
+  .get-involved {
+    width: 80%;
   }
 
-  .exhibition-info{
+  .exhibition-info {
     grid-template-columns: repeat(2, 1fr);
-    width:90%;
+    width: 90%;
     align-items: center;
   }
 
@@ -853,17 +845,15 @@ footer h3 {
     grid-area: 1/1/2/2;
   }
 
-  .exhibition-info .cta{
+  .exhibition-info .cta {
     grid-column: 1/3;
+    margin: 0 auto;
   }
 
   .exhibition-image-3 {
     grid-area: 3/2/5/3;
     height: 300px;
   }
- 
-
- 
 }
 
 @media (min-width: 1000px) {
@@ -918,8 +908,8 @@ footer h3 {
     width: 100%;
   }
 
-.get-involved{
-    width: 70%
+  .get-involved {
+    width: 70%;
   }
 
   .exhibition-info {
@@ -983,14 +973,13 @@ footer h3 {
     padding: 0 20px;
     width: 50%;
   }
-  .get-involved{
-    width: 60%
+  .get-involved {
+    width: 60%;
   }
 
   .exhibition-info {
     width: 70%;
   }
-
 }
 
 @media (min-width: 1500px) {
@@ -1021,11 +1010,11 @@ footer h3 {
   .most-popular {
     width: 60%;
   }
-  .get-involved{
-    width: 50%
+  .get-involved {
+    width: 50%;
   }
 
-  .get-involved img{
+  .get-involved img {
     height: 230px;
   }
 
