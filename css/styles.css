@@ -288,12 +288,13 @@ footer h3 {
   position: absolute;
   right: -80px;
   overflow: hidden;
-  opacity: calc(0.8);
+  opacity: calc(0.9);
 }
 
 .get-involved img {
   height: 400px;
   right: -280px;
+  overflow: hidden;
 }
 
 .intro-teachers img {
