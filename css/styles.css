@@ -267,7 +267,7 @@ footer h3 {
 
 .intro p,
 .get-involved p {
-  margin:0;
+  margin: 0;
 }
 
 .intro h2,
@@ -295,7 +295,6 @@ footer h3 {
   align-self: center;
   opacity: calc(0.9);
 }
-
 
 .intro-teachers p {
   text-align: end;
@@ -630,19 +629,33 @@ footer h3 {
   .contact-confirmation-section {
     width: 70%;
   }
-
-
 }
 
 @media (min-width: 500px) {
   .intro img {
-    
     justify-self: end;
+    align-self: center;
+    grid-area: 2/2/4/3;
+  }
+
+  .get-involved img {
+    height: 130px;
+    justify-self: center;
   }
 
   .intro-teachers img {
-    
+    grid-area: 2/1/4/2;
     justify-self: start;
+  }
+
+  .intro-paragraf,
+  .intro p {
+    grid-column: 1/2;
+  }
+
+  .intro-teachers .intro-paragraf,
+  .intro-teachers p {
+    grid-column: 2/3;
   }
 
   .most-popular {
@@ -711,13 +724,6 @@ footer h3 {
   .visit-location-admission {
     width: 70%;
   }
-  .intro img {
-    justify-self: center;
-  }
-  .get-involved img {
-    position: static;
-    justify-self: end;
-  }
 
   .exhibition-image-1 {
     height: 250px;
@@ -726,6 +732,25 @@ footer h3 {
   .exhibition-image-2 {
     height: 130px;
     align-self: flex-end;
+  }
+  .intro div {
+    width: 70%;
+  }
+
+  .get-involved{
+    width:90%
+  }
+
+  .get-involved-paragraf,
+  .get-involved p {
+    grid-column: 1/2;
+  }
+
+  .get-involved img {
+    height: 210px;
+    justify-self: end;
+    align-self: center;
+    grid-area: 2/2/6/3;
   }
 }
 
@@ -759,7 +784,7 @@ footer h3 {
   }
 
   .intro div {
-    width: 70%;
+    width: 60%;
   }
 
   .events-all {
@@ -780,6 +805,11 @@ footer h3 {
 
   .exhibition-info {
     width: 70%;
+  }
+
+  .get-involved-paragraf,
+  .get-involved p {
+    grid-column: 1/2;
   }
 }
 @media (min-width: 900px) {
@@ -847,6 +877,10 @@ footer h3 {
     grid-area: 3/2/5/3;
     height: 300px;
   }
+
+  .intro div {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -867,32 +901,32 @@ footer h3 {
   .intro {
     flex-direction: row;
     flex-wrap: no-wrap;
-    justify-content: space-evenly;
     width: 80%;
     margin: 20px auto;
   }
+
   .intro div {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     padding: 20px;
-    margin: 0;
+    margin: 0 auto;
   }
 
-  .intro img {
-    grid-row: 2/3;
-  }
-  .intro h2 {
-    grid-column: 1/2;
+  .intro img,
+  .intro-teachers img {
+    grid-area: 2/1/3/2;
     justify-self: center;
   }
 
-  .intro a {
-    grid-column: 1/2;
-  }
-
+  .intro-teachers .intro-paragraf,
   .intro-teachers p {
     grid-column: 1/2;
+    text-align: left;
   }
+  .intro-teachers h2{
+    text-align: left;
+  }
+
   .most-popular-exhibitions {
     flex-direction: row;
   }
@@ -903,6 +937,10 @@ footer h3 {
 
   .get-involved {
     width: 70%;
+  }
+
+  .get-involved img {
+    height: 230px;
   }
 
   .exhibition-info {
@@ -994,7 +1032,7 @@ footer h3 {
   }
 
   .intro {
-    width: 70%;
+    width: 60%;
   }
 
   .events-all {
@@ -1004,11 +1042,11 @@ footer h3 {
     width: 60%;
   }
   .get-involved {
-    width: 50%;
+    width: 55%;
   }
 
   .get-involved img {
-    height: 230px;
+    height: 250px;
   }
 
   .exhibition-info {
