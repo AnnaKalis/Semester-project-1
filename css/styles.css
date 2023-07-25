@@ -124,8 +124,9 @@ nav a {
   padding: 20px;
 }
 nav a:hover {
-  font-weight: 700;
+  text-decoration: underline;
 }
+
 #menu-checkbox:checked ~ nav {
   display: block;
 }
@@ -378,7 +379,7 @@ footer h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .events-single,
@@ -389,7 +390,7 @@ footer h3 {
 .events-single,
 .most-popular .exhibition-tile,
 .cta-blue {
-  margin: 10px auto;
+  margin: 10px auto 30px;
 }
 
 .events-single {
@@ -485,6 +486,11 @@ footer h3 {
   width: 90%;
   margin: 0 auto 20px;
   gap: 20px;
+}
+
+.exhibition-info .cta {
+  grid-column: 1/2;
+  margin: 0 auto;
 }
 
 .exhibition-image-1 {
@@ -651,6 +657,7 @@ footer h3 {
   .intro-paragraf,
   .intro p {
     grid-column: 1/2;
+    text-align: center;
   }
 
   .intro-teachers .intro-paragraf,
@@ -726,7 +733,7 @@ footer h3 {
   }
 
   .exhibition-image-1 {
-    height: 250px;
+    height: 220px;
   }
 
   .exhibition-image-2 {
@@ -737,8 +744,8 @@ footer h3 {
     width: 70%;
   }
 
-  .get-involved{
-    width:90%
+  .get-involved {
+    width: 90%;
   }
 
   .get-involved-paragraf,
@@ -761,7 +768,7 @@ footer h3 {
   }
 
   .exhibition-tile-pcta {
-    min-height: 130px;
+    min-height: 135px;
   }
 
   .contact-info-form {
@@ -839,9 +846,7 @@ footer h3 {
     flex-direction: row;
   }
 
-  .exhibition-tile-pcta {
-    min-height: 120px;
-  }
+ 
   .welcome a {
     right: 250px;
   }
@@ -875,7 +880,7 @@ footer h3 {
 
   .exhibition-image-3 {
     grid-area: 3/2/5/3;
-    height: 300px;
+    height: 280px;
   }
 
   .intro div {
@@ -924,8 +929,9 @@ footer h3 {
     grid-column: 1/2;
     text-align: left;
   }
-  .intro-teachers h2{
-    text-align: left;
+  .intro-teachers h2,
+  .intro  h2 {
+    text-align: center;
   }
 
   .most-popular-exhibitions {
@@ -947,6 +953,33 @@ footer h3 {
   .exhibition-info {
     width: 80%;
   }
+
+  a,
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.9375rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h3,
+  .cta,
+  .contact ul,
+  .welcome p {
+    font-size: 1.125rem;
+  }
+.welcome h1 {
+  font-size: 2.375rem;
+}
+
+ {
+  font-size: ;
+}
+
 }
 
 @media (min-width: 1100px) {
@@ -955,9 +988,6 @@ footer h3 {
     width: 80%;
   }
 
-  .exhibition-tile-pcta {
-    min-height: 130px;
-  }
 
   .welcome {
     min-height: 55vh;
@@ -987,8 +1017,11 @@ footer h3 {
   }
 
   .most-popular {
-    width: 80%;
+    width: 90%;
   }
+
+  
+
 }
 @media (min-width: 1300px) {
   .exhibition-tiles {
@@ -1011,6 +1044,10 @@ footer h3 {
 
   .exhibition-info {
     width: 70%;
+  }
+
+  .exhibition-tile-pcta {
+    min-height: 120px;
   }
 }
 
@@ -1040,7 +1077,7 @@ footer h3 {
     width: 45%;
   }
   .most-popular {
-    width: 60%;
+    width: 70%;
   }
   .get-involved {
     width: 55%;
