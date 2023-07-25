@@ -435,7 +435,7 @@ footer h3 {
 .visit-location-admission div,
 .visit-hours-accessibility div,
 .visit-food-shop div {
-  padding:0 20px;
+  padding: 0 20px;
 }
 
 /* exhibitions.html
@@ -855,7 +855,7 @@ footer h3 {
   header {
     flex-direction: row;
   }
-  
+
   .nav a {
     padding: 20px;
   }
@@ -1045,7 +1045,6 @@ footer h3 {
   }
 
   .visit div {
-    
     width: 50%;
   }
   .get-involved {
