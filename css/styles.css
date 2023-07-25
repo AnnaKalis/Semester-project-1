@@ -699,6 +699,12 @@ footer h3 {
   nav a {
     display: inline-block;
     color: var(--light-blue);
+    padding: 0 20px 0;
+  }
+
+  .logo {
+    height: 50px;
+    padding: 20px 0 0;
   }
 
   footer {
@@ -845,8 +851,13 @@ footer h3 {
   header {
     flex-direction: row;
   }
-
- 
+  
+  .nav a {
+    padding: 20px;
+  }
+  .logo {
+    padding: 20px;
+  }
   .welcome a {
     right: 250px;
   }
@@ -930,7 +941,7 @@ footer h3 {
     text-align: left;
   }
   .intro-teachers h2,
-  .intro  h2 {
+  .intro h2 {
     text-align: center;
   }
 
@@ -972,14 +983,13 @@ footer h3 {
   .welcome p {
     font-size: 1.125rem;
   }
-.welcome h1 {
-  font-size: 2.375rem;
-}
+  .welcome h1 {
+    font-size: 2.375rem;
+  }
 
- {
-  font-size: ;
-}
-
+   {
+    font-size: ;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -987,7 +997,6 @@ footer h3 {
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
   }
-
 
   .welcome {
     min-height: 55vh;
@@ -1019,9 +1028,6 @@ footer h3 {
   .most-popular {
     width: 90%;
   }
-
-  
-
 }
 @media (min-width: 1300px) {
   .exhibition-tiles {
