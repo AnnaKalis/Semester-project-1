@@ -419,7 +419,6 @@ footer h3 {
 }
 
 .visit div {
-  padding: 0 20px;
   width: 90%;
 }
 
@@ -788,7 +787,6 @@ footer h3 {
     width: 80%;
   }
   .visit div {
-    padding: 0 20px;
     width: 70%;
   }
 
@@ -1041,7 +1039,7 @@ footer h3 {
   }
 
   .visit div {
-    padding: 0 20px;
+    
     width: 50%;
   }
   .get-involved {
