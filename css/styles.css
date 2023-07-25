@@ -901,6 +901,7 @@ footer h3 {
   .intro {
     flex-direction: row;
     flex-wrap: no-wrap;
+    align-items: flex-start;
     width: 80%;
     margin: 20px auto;
   }
