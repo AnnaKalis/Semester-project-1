@@ -74,6 +74,7 @@ h3,
   border: 1px solid var(--blue-black);
   display: inline-block;
   text-align: center;
+  transition: all .2s ease-in-out;
 }
 
 .cta-orange {
@@ -86,6 +87,11 @@ h3,
 
 .cta-blue {
   background: var(--blue-green);
+}
+
+.cta:hover {
+  opacity: 0.7;
+  transform: scale(1.08);
 }
 
 /* Header
@@ -136,6 +142,8 @@ nav a:hover {
   padding: 20px;
   color: var(--light-blue);
 }
+
+
 .logo {
   display: inline-block;
   padding: 20px 20px;
@@ -269,7 +277,7 @@ footer h3 {
   object-fit: cover;
   object-position: center;
   margin: 0 auto;
-  border-radius: 0.3125rem;
+  border-radius: 0.0625rem;
   width: 80%;
 }
 
@@ -290,6 +298,7 @@ footer h3 {
 .exhibition-tile {
   border: 1px solid var(--blue-black);
 }
+
 
 .events-single {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
