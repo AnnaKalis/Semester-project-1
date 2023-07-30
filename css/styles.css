@@ -610,6 +610,7 @@ footer h3 {
   font-size: 1.325rem;
   align-items: center;
   padding: 30px 0;
+  text-align: center;
 }
 
 /* contact-confimration.html
@@ -965,7 +966,8 @@ footer h3 {
   h3,
   .cta,
   .contact ul,
-  .welcome p {
+  .welcome p,
+  .contact-information p {
     font-size: 1.125rem;
   }
   .welcome h1 {
