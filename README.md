@@ -12,7 +12,7 @@ I have designed and created webpage for the science museum.
 
 <br>
 
-## 📌 features
+## 📌 Features
 
 ### STRUCTURE
 
